@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+    html {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        @apply bg-slate-950 
+    }
+    h1 {
+        @apply font-bold text-4xl mb-10 text-amber-950
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+   h2 {
+        @apply font-bold text-2xl mb-2 text-amber-600
+   }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+   h3 {
+    @apply font-bold text-xl my-2 text-amber-600
+    }
+    p {
+        @apply text-base mb-2 text-white p-2
+    }
+    span {
+        @apply font-medium text-xl text-amber-100 italic
+    }
+
+    a {
+        @apply  text-lg md:text-xl text-amber-50 hover:scale-110
+    }
+
+   
+
+    .btn-Link {
+        @apply w-24 md:w-32  transition ease-in-out delay-100 animate-pulse p-2 rounded-md bg-amber-950 ring-1 ring-amber-300 hover:scale-110 
+    }
+    img {
+        @apply rounded-md mb-4
+    }
+
+    ul {
+       @apply  text-amber-300 mb-3
+    }
+
+    }
