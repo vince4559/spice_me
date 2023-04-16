@@ -32,7 +32,7 @@ const MealDetails =async ({params:{idMeal}}:ParamsProps) => {
   return (
    <section className='container w-screen mx-auto  p-3'>
         <div key={details.idMeal} className='md:flex justify-between  gap-3'>
-            <div className='flex-none w-full  md:w-1/3'>
+            <div className='flex-none w-full  md:w-1/3 mb-5'>
                 <h2><span>Recipe name: </span>{details.strMeal}</h2>
                 <h3><span>Category: </span>{details.strCategory}</h3>
                 <Image alt={details.idMeal} src={details.strMealThumb} width={500} height={500} />

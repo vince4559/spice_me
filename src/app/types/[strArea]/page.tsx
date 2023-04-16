@@ -37,7 +37,7 @@ const StrAreaCouseins = async ({params:{strArea}}:PageProps) => {
             <div key={m.idMeal} className='border-amber-400 border-2 rounded-md  mx-auto shadow-lg bg-slate-700'>                
                 <Link href={`/types/${strArea}/${m.idMeal}`} className='hover:brightness-50' >
                 <Image src={m.strMealThumb} width={200} height={200} alt={m.strMeal} className='shadow-lg  ' />
-                 <p className='text-bold text-xl text-green-300 text-center w-32 mx-auto p-1'>
+                 <p className='text-bold text-xl text-amber-300 text-center w-32 mx-auto p-1'>
                     {m.strMeal}
                 </p>
             </Link>
